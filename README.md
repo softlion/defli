@@ -13,7 +13,10 @@ It is built on my spare time.
 [Defli Website](https://defli.network/)  
 [Defli Discord](https://discord.gg/PpKMhCmewy)
 
-Any project can be a SCAM. Do you own research.
+🚨  
+🚨 Any project can be a SCAM. Do you own research. Start by reading how to detect a SCAM here:  
+🚨 https://wholovesburrito.com/2023/05/30/spotting-and-avoiding-scams/  
+🚨  
 
 # Scripts
 
