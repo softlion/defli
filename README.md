@@ -14,7 +14,8 @@ It is built on my spare time.
 [Defli Discord](https://discord.gg/PpKMhCmewy)
 
 🚨  
-🚨 Any project can be a SCAM. Do you own research. Start by reading [how to detect a SCAM](https://www.investopedia.com/articles/forex/042315/beware-these-five-bitcoin-scams.asp)  
+🚨 Any project can be a SCAM. Do you own research.  
+🚨 Start by reading [how to detect a SCAM](https://www.investopedia.com/articles/forex/042315/beware-these-five-bitcoin-scams.asp)  
 🚨  
 
 # Scripts
@@ -29,20 +30,17 @@ The scripts will ask you all required info for onboarding. You can run the scrip
 
 ## From Windows
 - Install the latest version of [microsoft powershell](https://www.microsoft.com/store/productId/9MZ1SNWT0N5D) from the windows store.
-- Download both the `.ps1` and the `.sh` files from this github in some folder
-- open a command prompt in that folder (enter "pwsh" in the search box of the window's taskbar)
+- open powershell (enter `pwsh` in the search box of the window's taskbar)
 ```powershell
-cd "c:\...\the folder where you downloaded the files"
-pwsh -ExecutionPolicy Bypass -File ".\windows_defli_installer.ps1" 10.128.12.1
-pwsh -ExecutionPolicy Bypass -File ".\wingbits.ps1" 10.128.12.1
+pwsh -Command "(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/softlion/defli/main/windows_defli_installer.ps1') | iex" -ExecutionPolicy Bypass
+pwsh -Command "(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/softlion/defli/main/wingbits.ps1') | iex" -ExecutionPolicy Bypass
 ```
-Replace `10.128.12.1` by the IP of your device.
 
 ## Directly from within the device
-- ssh into your device, download the .sh file and run it
+- ssh into your device and run:
 ```shell
-cat ./rpi_defli_installer.sh | sudo bash
-cat ./wingbits.sh | sudo bash
+curl https://raw.githubusercontent.com/softlion/defli/main/rpi_defli_installer.sh | sudo bash
+curl https://raw.githubusercontent.com/softlion/defli/main/wingbits.sh | sudo bash
 ```
 
 # Tip
