@@ -1,12 +1,5 @@
 #multi mining with Wingbits
 #Softlion
-#--------------------------
-# to run:
-# install "microsoft powershell" from windows store (https://www.microsoft.com/store/productId/9MZ1SNWT0N5D)
-# open a command prompt (type "pwsh" the search box of the window's taskbar)
-# pwsh -ExecutionPolicy Bypass -File ".\wingbits.ps1" 10.128.12.1 [your-wingbits-id]
-# (replace 10.128.12.1 by the IP of your device)
-#--------------------------
 
 param (
     [string]$IP = $null,
