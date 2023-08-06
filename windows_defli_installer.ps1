@@ -1,5 +1,5 @@
 #multi mining with Defli
-#Softlion (Benjamin Mayrargue)
+#Softlion
 #--------------------------
 # to run:
 # install "microsoft powershell" from windows store (https://www.microsoft.com/store/productId/9MZ1SNWT0N5D)
@@ -22,7 +22,6 @@ function Main() {
   Write-Host "DEFLI install"
   Write-Host "For any firmware with Docker (Pisces) or Balena (Sencap, Nebra)"
   Write-Host "Guides: https://github.com/softlion/defli/wiki"
-  Write-Host "Benjamin Mayrargue 07/2023"
   Write-Host "--------------------------------------"
   if ([string]::IsNullOrEmpty($IP)) {
     $IP = Read-Host "ssh IP of target device (ex: 192.168.10.22)"
@@ -30,8 +29,9 @@ function Main() {
 
   Write-Host "Connecting to $($IP):22222"
 
-  
-  $all = Get-Content -Raw -Path (Join-Path $PSScriptRoot "rpi_defli_installer.sh")
+
+  $all = (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/softlion/defli/main/rpi_defli_installer.sh')
+  #$all = Get-Content -Raw -Path (Join-Path $PSScriptRoot "rpi_defli_installer.sh")
 
   $all = $all -replace "`r"
   ssh -t -p 22222 root@$IP $all
