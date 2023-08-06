@@ -32,8 +32,8 @@ The scripts will ask you all required info for onboarding. You can run the scrip
 - Install the latest version of [microsoft powershell](https://www.microsoft.com/store/productId/9MZ1SNWT0N5D) from the windows store.
 - open powershell (enter `pwsh` in the search box of the window's taskbar)
 ```powershell
-pwsh -ExecutionPolicy Bypass -Command "(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/softlion/defli/main/windows_defli_installer.ps1') | iex"
-pwsh -ExecutionPolicy Bypass -Command "(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/softlion/defli/main/wingbits.ps1') | iex"
+pwsh -ExecutionPolicy Bypass -Command "iwr -Uri 'https://raw.githubusercontent.com/softlion/defli/main/windows_defli_installer.ps1' | iex"
+pwsh -ExecutionPolicy Bypass -Command "iwr -Uri 'https://raw.githubusercontent.com/softlion/defli/main/wingbits.ps1' | iex"
 ```
 
 ## Directly from within the device
