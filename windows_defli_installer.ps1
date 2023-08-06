@@ -29,8 +29,7 @@ function Main() {
 
   Write-Host "Connecting to $($IP):22222"
 
-
-  $all = (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/softlion/defli/main/rpi_defli_installer.sh')
+  $all = iwr 'https://raw.githubusercontent.com/softlion/defli/main/rpi_defli_installer.sh' -UseBasicParsing | % Content
   #$all = Get-Content -Raw -Path (Join-Path $PSScriptRoot "rpi_defli_installer.sh")
 
   $all = $all -replace "`r"
