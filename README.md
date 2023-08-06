@@ -14,8 +14,7 @@ It is built on my spare time.
 [Defli Discord](https://discord.gg/PpKMhCmewy)
 
 🚨  
-🚨 Any project can be a SCAM. Do you own research. Start by reading how to detect a SCAM here:  
-🚨 https://wholovesburrito.com/2023/05/30/spotting-and-avoiding-scams/  
+🚨 Any project can be a SCAM. Do you own research. Start by reading [how to detect a SCAM](https://www.investopedia.com/articles/forex/042315/beware-these-five-bitcoin-scams.asp)  
 🚨  
 
 # Scripts
