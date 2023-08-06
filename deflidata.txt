@@ -82,8 +82,8 @@ ULTRAFEEDER_CONFIG=
 
 # according to https://github.com/sdr-enthusiasts/docker-adsb-ultrafeeder
 # defli is not a supported value there.
-#    defli,77.68.73.29,30004,beast_reduce_plus_out;
 #    defli,77.68.73.29,30001,beast_reduce_plus_out;
+#    defli,162.255.85.52,30001,beast_reduce_plus_out;
 
 # --------------------------------------------------
 UUID=${ULTRAFEEDER_UUID}
