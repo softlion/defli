@@ -30,7 +30,8 @@ function Main() {
   
   Write-Host "Connecting to $($IP):22222"
 
-  $all = Get-Content -Raw -Path (Join-Path $PSScriptRoot "wingbits.sh")
+  $all = (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/softlion/defli/main/wingbits.sh')
+  #$all = Get-Content -Raw -Path (Join-Path $PSScriptRoot "wingbits.sh")
 
   if (![string]::IsNullOrEmpty($DEVICEID)) {
     $all = "DEVICEID=$DEVICEID; `n" + $all
