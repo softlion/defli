@@ -4,7 +4,6 @@ This repo has moved to a more generic name DePIN
 
 [https://github.com/softlion/depin](https://github.com/softlion/depin)
 
-
 # Tip
 
 Multi chain Metamask account (BSC, Etherum, Arbitrum, Doge, Polygon, Avalanche, ...):
